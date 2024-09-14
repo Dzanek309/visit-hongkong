@@ -25,11 +25,10 @@ nav {
 nav>img {
     height: 100%;
     margin: 0px 20px;
-    margin-top: 15px;
     padding: 5px;
     cursor: pointer;
-    box-shadow: rgba(220, 20, 60, 0.35) 0px -50px 36px -28px inset;
-    border-bottom: 2px solid crimson;
+    /* box-shadow: rgba(220, 20, 60, 0.35) 0px -50px 36px -28px inset; */
+    /* border-bottom: 2px solid crimson; */
     background-color: black;
 }
 
@@ -47,18 +46,19 @@ nav>ul>li {
     align-items: center;
     padding: 15px 20px;
     margin: 7px 10px;
-    color: white;
+    color: crimson;
     font-family: open sans;
     font-weight: bold;
     font-size: 15px;
     transition: 0.3s;
-    box-shadow: rgba(220, 20, 60, 0.35) 0px -50px 36px -28px inset;
+    /* box-shadow: rgba(220, 20, 60, 0.35) 0px -50px 36px -28px inset; */
     border-bottom: 2px solid crimson;
+    border-left: 2px solid crimson;
     background-color: black;
 }
 
 nav>ul>li:hover {
-    background-color: red;
+    background-color: crimson;
     color: black;
     cursor: pointer;
 }
