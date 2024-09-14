@@ -82,15 +82,15 @@ header>video {
     min-width: 100%;
     min-height: 100%;
     filter: blur(2px);
+    position: fixed;
 }
 
 #title-wrapper {
     position: fixed;
-    bottom: 15%;
-    left: 20%;
-    font-size: 100px;
+    bottom: 25%;
+    left: 10%;
+    font-size: 80px;
     font-family: open sans;
-    width: 500px;
     z-index: 2;
 }
 
@@ -101,10 +101,6 @@ h4 {
     color: transparent;
     color: transparent;
     -webkit-text-stroke: 2px crimson;
-    /* Border width and color */
-    /* Adjust font size as needed */
-    /* text-shadow: 0 0 10px rgba(220, 20, 60, 0.6); */
-    /* color: crimson; */
 
 }
 
@@ -118,7 +114,7 @@ h4 {
 }
 
 main {
-    height: 800px;
+    height: 1800px;
     width: 100%;
     z-index: 3;
     position: relative;
