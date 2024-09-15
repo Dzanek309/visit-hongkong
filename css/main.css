@@ -114,7 +114,7 @@ main>section {
 
 main>section>h1 {
     color: crimson;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     font-size: 5rem;
 }
@@ -124,6 +124,7 @@ main>section>div>div {
     width: 300px;
     background-color: crimson;
     margin: 10px;
+    padding: 25px;
 }
 
 .wrapper {
@@ -131,4 +132,28 @@ main>section>div>div {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.card-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: crimson;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid crimson;
+    border-right: 2px solid crimson;
 }
