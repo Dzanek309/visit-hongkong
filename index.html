@@ -16,44 +16,111 @@
     <nav>
         <img src="img/logov2.png" alt="logo">
         <ul>
-            <li class="main-menu_button">PLACEHOLDER</li>
-            <li class="main-menu_button">PLACEHOLDER</li>
-            <li class="main-menu_button">PLACEHOLDER</li>
+            <li class="main-menu_button">EVENTS</li>
+            <li class="main-menu_button">EXPLORE</li>
+            <li class="main-menu_button">PLAN</li>
         </ul>
     </nav>
     <header>
-        <div id="title-wrapper">
-            <h1 class="title-h1">HONG KONG</h1>
-            <h1 class="title-h1">香港</h1>
+        <div id="main-title-wrapper">
+            <h1 class="header-title">HONG KONG</h1>
+            <h1 class="header-title">香港</h1>
         </div>
         <video src="video/headerVideo.mp4" autoplay muted loop></video>
         <div class="bottom-shadow"></div>
     </header>
     <main>
         <section>
-            <h1>What's Popular</h1>
-            <div class="wrapper">
-                <div data-tilt>
+            <h1 class="section-title">What's Popular</h1>
+            <div class="wrapper-row">
+                <div data-tilt class="card">
+                    <h1>Mid-Autumn Festival</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
                     <h1>Lorem ipsum</h1>
                     <button class="card-button"></button>
                 </div>
-                <div data-tilt>
+                <div data-tilt class="card">
                     <h1>Lorem ipsum</h1>
                     <button class="card-button"></button>
                 </div>
-                <div data-tilt>
+                <div data-tilt class="card">
                     <h1>Lorem ipsum</h1>
                     <button class="card-button"></button>
                 </div>
-                <div data-tilt>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-title">Is It Realy Worth It?</h1>
+            <div class="wrapper-row">
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-title">City And Nature</h1>
+            <div class="wrapper-row">
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
+                    <h1>Lorem ipsum</h1>
+                    <button class="card-button"></button>
+                </div>
+                <div data-tilt class="card">
                     <h1>Lorem ipsum</h1>
                     <button class="card-button"></button>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
-
+    <footer class="wrapper-row">
+        <!-- <div class="wrapper-column">
+            <img src="img/logov2.png" alt="logo">
+            <h1 class="section-title" style="text-align: center;">Visit Hong Kong</h1>
+        </div> -->
+        <div class="wrapper-column">
+            <h2 class="title-with-border">ABOUT THIS SITE</h2>
+            <p>Terms of use</p>
+            <p>Privacy policy</p>
+            <p>Cookie policy</p>
+        </div>
+        <div class="wrapper-column">
+            <h2 class="title-with-border">RELATED SITES</h2>
+            <p>About Us</p>
+            <p>Newsroom</p>
+            <p>Join Us</p>
+        </div>
+        <div class="wrapper-column">
+            <h2 class="title-with-border">HELP</h2>
+            <p>Contact us</p>
+            <p>FAQ</p>
+            <p>Newsletter signup</p>
+        </div>
+        <div class="break"></div>
+        <!-- <p>Copyright © 2024 Jan Bil All rights reserved.</p> -->
+        <p>DESIGNED BY JAN BIL</p>
+    </footer>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/tilt.js/dest/tilt.jquery.js"></script>
 </body>
