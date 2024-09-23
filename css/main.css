@@ -134,7 +134,16 @@ main {
     width: 300px;
     background-color: var(--main-color);
     margin: 10px;
-    padding: 25px;
+    padding: 0px 25px;
+}
+
+.card-auto {
+    height: auto;
+    width: 300px;
+    background-color: var(--main-color);
+    margin: 10px;
+    padding: 0px 25px;
+    position: relative;
 }
 
 .card-button {
@@ -159,6 +168,15 @@ main {
     height: 10px;
     border-top: 2px solid var(--main-color);
     border-right: 2px solid var(--main-color);
+}
+
+.card-img {
+    height: 900px;
+}
+
+.card-img:hover {
+    filter: brightness(1.5);
+    color: black;
 }
 
 #main-title-wrapper {
