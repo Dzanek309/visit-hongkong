@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-jquery@^3.1.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
-  integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
+"jquery@^2.2.1":
+  "integrity" "sha512-lBHj60ezci2u1v2FqnZIraShGgEXq35qCzMv4lITyHGppTnA13rwR0MgwyNJh9TnDs3aXUvd1xjAotfraMHX/Q=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-2.2.4.tgz"
+  "version" "2.2.4"
 
-tilt.js@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/tilt.js/-/tilt.js-1.2.1.tgz#7d140ecb06744192815735e538b02739fe24d92f"
-  integrity sha512-IGRh3FJbq6BRH2ETb2KxDWont2k740oR+0QMs39QVkjnr7QmA6L1VzSKsOLgFXg5QNtHyRKp7vzFoJCYxgzsJA==
+"swiper.js@^1.0.0":
+  "integrity" "sha512-Ze1W3YndqZIXiZ84yud7u3h2bzXx2fDNJHjNAq0guqijx2UlqMVdLBPlz+lFK7fad7bd16Osllj+ssiplr82RQ=="
+  "resolved" "https://registry.npmjs.org/swiper.js/-/swiper.js-1.0.0.tgz"
+  "version" "1.0.0"
   dependencies:
-    jquery "^3.1.1"
+    "jquery" "^2.2.1"
