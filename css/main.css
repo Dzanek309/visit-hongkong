@@ -19,6 +19,7 @@ main {
     z-index: 3;
     position: relative;
     background-color: var(--secondary-color);
+    background-image: url(../img/background2.svg);
 }
 
 :root {
@@ -53,18 +54,13 @@ main {
     list-style: none;
 }
 
-.button--nav {
-    border-bottom: 2px solid var(--main-color);
-    border-left: 2px solid var(--main-color);
-}
-
 /* --- BUTTON --- */
 
 .button {
     display: flex;
     z-index: 1;
     align-items: center;
-    padding: 15px 20px;
+    padding: 11px 20px;
     margin: 7px 10px;
     width: 160px;
     color: var(--main-color);
@@ -73,6 +69,22 @@ main {
     font-size: 15px;
     transition: 0.3s;
     background-color: var(--secondary-color);
+}
+
+.button--nav {
+    border-bottom: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+}
+
+.button--nav-mobile {
+    border-bottom: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+    display: none;
+}
+
+.button--list {
+    border-left: 2px solid crimson;
+    font-size: 13px;
 }
 
 .button:hover {
@@ -105,21 +117,22 @@ main {
     color: transparent;
     -webkit-text-stroke: 2px var(--main-color);
     font-family: fantasy;
-
+    /* background-color: black; */
 }
 
 /* --- SECTION --- */
 
 .section__title {
-    color: var(--main-color);
+    /* color: var(--main-color); */
     padding: 10px;
     margin: 0;
     font-size: 5rem;
+    -webkit-text-stroke: 2px var(--main-color);
 }
 
-/* --- POPULAR-CARD --- */
+/* --- CARD-POPULAR-SECTION --- */
 
-.popular-card {
+.card-popular-section {
     height: auto;
     width: 300px;
     margin: 10px;
@@ -130,16 +143,59 @@ main {
     border-left: 2px solid crimson;
 }
 
-.popular-card__img {
+.card-popular-section__img {
     height: 900px;
+    transition: 0.2s;
 }
 
-.popular-card__img:hover {
+.card-popular-section__img:hover {
     filter: brightness(1.5);
     margin-left: 10px;
     color: black;
     cursor: pointer;
 }
+
+.card-popular-section__title {
+    white-space: nowrap;
+    background-color: black;
+}
+
+/* --- CARD --- */
+
+/* .card-bundle {
+    height: 400px;
+    width: 250px;
+    position: relative;
+    margin: 0 -50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid crimson;
+    border-top: 10px solid crimson;
+    overflow: hidden;
+} */
+
+/* .card-bundle img {
+    height: 100%;
+} */
+
+/* .card-bundle:nth-child(1) {
+    z-index: 1;
+} */
+
+/* .card-bundle:nth-child(2) {
+    z-index: 3;
+    transform: scale(1.05);
+} */
+
+/* .card-bundle:nth-child(3) {
+    z-index: 2;
+} */
+
+/* .card-bundle-text-area {
+    flex-grow: 5;
+    color: crimson;
+    border: 2px solid crimson;
+} */
 
 /* --- WRAPPER --- */
 
@@ -149,6 +205,12 @@ main {
     align-items: center;
     flex: 1 1 0px;
     justify-content: space-evenly;
+}
+
+.wrapper--card-bundle {
+    justify-content: flex-start;
+    margin: 30px 80px;
+    flex-wrap: nowrap;
 }
 
 .wrapper--title {
@@ -195,15 +257,20 @@ main {
     margin: 10px 0px;
 }
 
-/* --- PICTURE-FRAME --- */
-
-.picture-frame {
-    width: 30%;
-    height: 900px;
+.footer__creator {
+    padding: 10px;
     border: 2px solid crimson;
 }
 
+/* --- PICTURE-FRAME --- */
+
+.picture-frame {
+    border: 2px solid crimson;
+    margin: 15px;
+}
+
 .picture-frame--big {
+    width: auto;
     height: 900px;
 }
 
@@ -213,17 +280,27 @@ main {
 }
 
 .picture-frame__img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     margin: 15px;
 }
+
+.picture-frame__img--small {
+    width: 350px;
+    height: 350px;
+}
+
+.picture-frame__img--big {
+    width: 500px;
+    height: 900px;
+}
+
+
 
 /* --- TEXT-CONTAINER --- */
 
 .text-container {
     display: grid;
-    height: 900px;
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
@@ -231,6 +308,7 @@ main {
 }
 
 .text-container__small-item {
+    min-width: 300px;
     padding: 20px;
     height: 100%;
     display: flex;
@@ -239,22 +317,17 @@ main {
     flex-direction: column;
 }
 
-.text-container__logo-number {
+.text-container__title {
     width: 90px;
     height: 90px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 13px;
     align-items: center;
-    text-align: center;
+    text-align: left;
     border-left: 2px solid crimson;
     border-bottom: 2px solid crimson;
-}
-
-.text-container__logo-number span {
-    font-size: 90px;
-    color: black;
-    font-family: Arial, sans-serif;
-    -webkit-text-stroke: 2px crimson;
+    /* background-color: black; */
 }
 
 /* --- OTHER --- */
@@ -266,4 +339,184 @@ main {
     bottom: 20%;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
     z-index: 1;
+}
+
+.black-background {
+    background-color: black;
+}
+
+/* --- DROPDOWN --- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    border-left: 2px solid crimson;
+    border-bottom: 2px solid crimson;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- NEWSLETTER --- */
+
+.newsletter {
+    padding: 80px;
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+}
+
+.newsletter__small-title {
+    border-bottom: 1px solid white;
+}
+
+.newsletter__title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.newsletter__text-form {
+    width: 400px;
+    height: 45px;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+.newsletter__submit {
+    color: crimson;
+    background-color: black;
+    border: none;
+    height: 45px;
+    padding: 0px 20px;
+    font-weight: 900;
+}
+
+/* --- SECTION-TWO --*/
+
+.section-two .text-container .text-container__small-item:nth-child(1) {
+    background-image: url(../img/test1.jpg);
+}
+
+.section-two .text-container .text-container__small-item:nth-child(2) {
+    background-image: url(../img/test2.jpg);
+}
+
+.section-two .text-container .text-container__small-item:nth-child(3) {
+    background-image: url(../img/test3.jpg);
+}
+
+.section-two .text-container .text-container__small-item:nth-child(4) {
+    background-image: url(../img/test8.jpg);
+}
+
+/* INTERACTIVE-MAP */
+.interactive-map {
+    /* position: relative; */
+    /* height: 700px; */
+    /* width: 600px; */
+    z-index: 2;
+}
+
+.interactive-map__button {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    z-index: 3;
+    border-radius: 50%;
+    border: none;
+    background-color: crimson;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.interactive-map__button:hover {
+    filter: brightness(1.5);
+    scale: 1.5;
+}
+
+/* Lantau North Country Park */
+.interactive-map>button:nth-child(2) {
+    top: 72%;
+    left: 15%;
+}
+
+/* Shek O Country Park */
+.interactive-map>button:nth-child(3) {
+    top: 75%;
+    left: 63%;
+}
+
+/* Pok Fu Lam Country Park */
+.interactive-map>button:nth-child(4) {
+    top: 65%;
+    left: 50%;
+}
+
+/* Sai Kung East Country Park */
+.interactive-map>button:nth-child(5) {
+    top: 34%;
+    left: 80%;
+}
+
+/* Lion Rock Country Park */
+.interactive-map>button:nth-child(6) {
+    top: 45%;
+    left: 53%;
+}
+
+.interactive-map__showcase-photo {
+    width: 800px;
+    opacity: 0.3;
+    position: absolute;
+    left: 10%;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__title {
+        font-size: 100px;
+        word-spacing: 100vw;
+    }
+
+    .button--nav {
+        display: none;
+    }
+
+    .button--nav-mobile {
+        display: block;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .newsletter__text-form {
+        width: auto;
+        text-align: center;
+    }
+
+    .card-popular-section__img {
+        height: 500px;
+    }
 }

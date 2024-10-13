@@ -19,9 +19,43 @@
     <nav class="nav">
         <img src="img/logov2.png" alt="logo" class="nav__logo">
         <ul class="nav__ul">
-            <li class="button button--nav">EVENTS</li>
+            <div class="dropdown">
+                <li class="button button--nav-mobile">MENU</li>
+                <div class="dropdown-content">
+                    <li class="button button--list">EVENTS</li>
+                    <li class="button button--list">EXPLORE</li>
+                    <li class="button button--list">PLAN</li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li class="button button--nav">EVENTS</li>
+                <div class="dropdown-content">
+                    <li class="button button--list">UPCOMING</li>
+                    <li class="button button--list">CONCERTS</li>
+                    <li class="button button--list">FESTIVALS</li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li class="button button--nav">EXPLORE</li>
+                <div class="dropdown-content">
+                    <li class="button button--list">ATTRACTIONS</li>
+                    <li class="button button--list">DINING</li>
+                    <li class="button button--list">NIGHTLIFE</li>
+                    <li class="button button--list">CULTURE</li>
+                    <li class="button button--list">TRAVEL</li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li class="button button--nav">PLAN</li>
+                <div class="dropdown-content">
+                    <li class="button button--list">ACCOMMODATION</li>
+                    <li class="button button--list">ESSENTIALS</li>
+                    <li class="button button--list">TRIP PLANNER</li>
+                </div>
+            </div>
+            <!-- <li class="button button--nav">EVENTS</li>
             <li class="button button--nav">EXPLORE</li>
-            <li class="button button--nav">PLAN</li>
+            <li class="button button--nav">PLAN</li> -->
         </ul>
     </nav>
     <header class="header">
@@ -34,61 +68,78 @@
     </header>
     <main>
         <section class="section">
-            <h1 class="section__title">> What's Popular</h1>
+            <h1 class="section__title"><span class="black-background">> What's Popular</span></h1>
             <div class="wrapper wrapper--row">
-                <div class="popular-card">
-                    <h1 class="popular-card__title">Cityscape Watching</h1>
-                    <img src="img/test6.jpg" alt="" class="popular-card__img">
+                <div class="wrapper">
+                    <div class="card-popular-section">
+                        <h1 class="card-popular-section__title">Cityscape Watching</h1>
+                        <img src="img/test6.jpg" alt="" class="card-popular-section__img">
+                    </div>
+                    <div class="card-popular-section">
+                        <h1 class="card-popular-section__title">Lantern Carnivals</h1>
+                        <img src="img/card_lanters.jpg" alt="" class="card-popular-section__img">
+                    </div>
                 </div>
-                <div class="popular-card">
-                    <h1 class="popular-card__title">Lantern Carnivals</h1>
-                    <img src="img/card_lanters.jpg" alt="" class="popular-card__img">
-                </div>
-                <div class="popular-card">
-                    <h1 class="popular-card__title">Chinese New Year</h1>
-                    <img src="img/card_firework.jpg" alt="" class="popular-card__img">
-                </div>
-                <div class="popular-card">
-                    <h1 class="popular-card__title">Dragon Dance</h1>
-                    <img src="img/card_dragon.webp" alt="" class="popular-card__img">
+                <div class="wrapper">
+                    <div class="card-popular-section">
+                        <h1 class="card-popular-section__title">Chinese New Year</h1>
+                        <img src="img/card_firework.jpg" alt="" class="card-popular-section__img">
+                    </div>
+                    <div class="card-popular-section">
+                        <h1 class="card-popular-section__title">Dragon Dance</h1>
+                        <img src="img/card_dragon.webp" alt="" class="card-popular-section__img">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section">
-            <h1 class="section__title">> Is It Realy Worth It?</h1>
-            <div class="wrapper wrapper-row">
+        <section class="section  section-two">
+            <h1 class="section__title"><span class="black-background">> Is It Realy Worth It?</span></h1>
+            <div class="wrapper wrapper--row">
                 <div class="picture-frame picture-frame--big">
-                    <img class="picture-frame__img" src="img/test3.jpg" alt="">
+                    <img class="picture-frame__img picture-frame__img--big" src="img/test3.jpg" alt="">
                 </div>
                 <div class="text-container">
                     <div class="text-container__small-item">
-                        <div class="text-container__logo-number">
-                            <span>1</span>
+                        <div class="text-container__title">
+                            <h1>Number One</h1>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                            Non, quam saepe veniam voluptatum alias tenetur?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
                             obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
                             Non, quam saepe veniam voluptatum alias tenetur?</p>
                     </div>
                     <div class="text-container__small-item">
-                        <div class="text-container__logo-number">
-                            <span>2</span>
+                        <div class="text-container__title">
+                            <h1>Number Two</h1>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+
+                    </div>
+                    <div class="text-container__small-item">
+                        <div class="text-container__title">
+                            <h1>Number Three</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                            Non, quam saepe veniam voluptatum alias tenetur?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
                             obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
                             Non, quam saepe veniam voluptatum alias tenetur?</p>
                     </div>
                     <div class="text-container__small-item">
-                        <div class="text-container__logo-number">
-                            <span>3</span>
+                        <div class="text-container__title">
+                            <h1>Number Four</h1>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
                             obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
                             Non, quam saepe veniam voluptatum alias tenetur?</p>
-                    </div>
-                    <div class="text-container__small-item">
-                        <div class="text-container__logo-number">
-                            <span>4</span>
-                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
                             obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
                             Non, quam saepe veniam voluptatum alias tenetur?</p>
@@ -97,7 +148,66 @@
             </div>
         </section>
         <section class="section">
-            <h1 class="section__title">> City And Nature</h1>
+            <h1 class="section__title"><span class="black-background">> City And Nature</span></h1>
+            <div class="wrapper wrapper--row">
+                <div class="wrapper wrapper--row">
+                    <div class="picture-frame picture-frame--small">
+                        <img class="picture-frame__img picture-frame--small" src="img/nature.jpg" alt="">
+                    </div>
+                    <div class="wrapper wrapper--row">
+                        <div class="text-container__small-item black-background">
+                            <div class="text-container__title">
+                                <h1>Nature</h1>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                                Non, quam saepe veniam voluptatum alias tenetur?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                                Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper wrapper--row">
+                    <div class="picture-frame picture-frame--small">
+                        <img class="picture-frame__img picture-frame--small" src="img/city.jpg" alt="">
+                    </div>
+                    <div class="wrapper wrapper--row">
+                        <div class="text-container__small-item black-background">
+                            <div class="text-container__title">
+                                <h1>City</h1>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                                Non, quam saepe veniam voluptatum alias tenetur?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
+                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
+                                Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper wrapper--row">
+                <img class="interactive-map__showcase-photo" src="img/card_dragon.webp" alt="showcase-photo">
+                <div style="position: relative;" class="interactive-map">
+                    <img class="interactive-map__map" src="img/hong-kong-outline.png" alt="">
+                    <button class="interactive-map__button"></button>
+                    <button class="interactive-map__button"></button>
+                    <button class="interactive-map__button"></button>
+                    <button class="interactive-map__button"></button>
+                    <button class="interactive-map__button"></button>
+                </div>
+            </div>
+        </section>
+        <section class="section newsletter">
+            <div class="wrapper wrapper--column">
+                <span class="newsletter__small-title">newsletter</span>
+                <h1 class="newsletter__title">Don't Miss Our Daily Updates</h1>
+                <div class="wrapper wrapper--row">
+                    <input class="newsletter__text-form" type="text" placeholder="Email address" name="mail" required>
+                    <input class="newsletter__submit" type="submit" value="SUBSCRIBE" name="mail">
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer wrapper wrapper--row">
@@ -125,7 +235,7 @@
         </div>
         <div class="wrapper-break"></div>
         <!-- <p>Copyright © 2024 Jan Bil All rights reserved.</p> -->
-        <p class="footer__creator">DESIGNED BY JAN BIL</p>
+        <p class="footer__creator">--- DESIGNED BY JAN BIL ---</p>
     </footer>
 </body>
 
