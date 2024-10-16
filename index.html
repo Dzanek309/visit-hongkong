@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <link rel="shortcut icon" href="img/logov2.png" type="image/png">
+    <meta name="description"
+        content="Discover Hong Kong, your ultimate guide to exploring the vibrant city's attractions, culture, and experiences. From iconic landmarks and bustling markets to world-class dining and scenic hiking trails, our website offers everything you need to plan an unforgettable visit. Uncover local festivals, top-rated shopping spots, and hidden gems in one of Asia's most dynamic destinations.">
+    <meta name="keywords"
+        content="hong kong travel, hong kong tourism, hong kong attractions, hong kong culture, hong kong food, hong kong nightlife, hong kong festivals, hong kong hiking trails">
+    <meta name="author" content="Jan Bil">
     <!-- <a href="https://www.flaticon.com/free-icons/hong-kong" title="hong kong icons">Hong kong icons created by Freepik -Flaticon</a> -->
     <!-- <a href="https://www.flaticon.com/free-icons/hong-kong" title="hong kong icons">Hong kong icons created by cube29Flaticon</a> -->
     <!-- https://youtu.be/_jow6M0iYok?si=jX-JaXsFqwEme-Vm -->
@@ -22,40 +27,37 @@
             <div class="dropdown">
                 <li class="button button--nav-mobile">MENU</li>
                 <div class="dropdown-content">
-                    <li class="button button--list">EVENTS</li>
-                    <li class="button button--list">EXPLORE</li>
-                    <li class="button button--list">PLAN</li>
+                    <li class="button button--list"><a class="link" href="#">EVENTS</a></li>
+                    <li class="button button--list"><a class="link" href="#">EXPLORE</a></li>
+                    <li class="button button--list"><a class="link" href="#">PLAN</a></li>
                 </div>
             </div>
             <div class="dropdown">
                 <li class="button button--nav">EVENTS</li>
                 <div class="dropdown-content">
-                    <li class="button button--list">UPCOMING</li>
-                    <li class="button button--list">CONCERTS</li>
-                    <li class="button button--list">FESTIVALS</li>
+                    <li class="button button--list"><a class="link" href="#">UPCOMING</a></li>
+                    <li class="button button--list"><a class="link" href="#">CONCERTS</a></li>
+                    <li class="button button--list"><a class="link" href="#">FESTIVALS</a></li>
                 </div>
             </div>
             <div class="dropdown">
                 <li class="button button--nav">EXPLORE</li>
                 <div class="dropdown-content">
-                    <li class="button button--list">ATTRACTIONS</li>
-                    <li class="button button--list">DINING</li>
-                    <li class="button button--list">NIGHTLIFE</li>
-                    <li class="button button--list">CULTURE</li>
-                    <li class="button button--list">TRAVEL</li>
+                    <li class="button button--list"><a class="link" href="#">ATTRACTIONS</a></li>
+                    <li class="button button--list"><a class="link" href="#">DINING</a></li>
+                    <li class="button button--list"><a class="link" href="#">NIGHTLIFE</a></li>
+                    <li class="button button--list"><a class="link" href="#">CULTURE</a></li>
+                    <li class="button button--list"><a class="link" href="#">TRAVEL</a></li>
                 </div>
             </div>
             <div class="dropdown">
                 <li class="button button--nav">PLAN</li>
                 <div class="dropdown-content">
-                    <li class="button button--list">ACCOMMODATION</li>
-                    <li class="button button--list">ESSENTIALS</li>
-                    <li class="button button--list">TRIP PLANNER</li>
+                    <li class="button button--list"><a class="link" href="#">ACCOMMODATION</a></li>
+                    <li class="button button--list"><a class="link" href="#">ESSENTIALS</a></li>
+                    <li class="button button--list"><a class="link" href="#">TRIP PLANNER</a></li>
                 </div>
             </div>
-            <!-- <li class="button button--nav">EVENTS</li>
-            <li class="button button--nav">EXPLORE</li>
-            <li class="button button--nav">PLAN</li> -->
         </ul>
     </nav>
     <header class="header">
@@ -72,77 +74,111 @@
             <div class="wrapper wrapper--row">
                 <div class="wrapper">
                     <div class="card-popular-section">
-                        <h1 class="card-popular-section__title">Cityscape Watching</h1>
-                        <img src="img/test6.jpg" alt="" class="card-popular-section__img">
+                        <h1 class="card-popular-section__title">Hiking</h1>
+                        <a class="link" href="#"><img src="img/hiking.jpg" alt="hiking"
+                                class="card-popular-section__img"></a>
                     </div>
                     <div class="card-popular-section">
                         <h1 class="card-popular-section__title">Lantern Carnivals</h1>
-                        <img src="img/card_lanters.jpg" alt="" class="card-popular-section__img">
+                        <a class="link" href="#"><img src="img/card_lanters.jpg" alt="lantern carnivals"
+                                class="card-popular-section__img"></a>
                     </div>
                 </div>
                 <div class="wrapper">
                     <div class="card-popular-section">
                         <h1 class="card-popular-section__title">Chinese New Year</h1>
-                        <img src="img/card_firework.jpg" alt="" class="card-popular-section__img">
+                        <a class="link" href="#"><img src="img/card_firework.jpg" alt="chinese new year"
+                                class="card-popular-section__img"></a>
                     </div>
                     <div class="card-popular-section">
                         <h1 class="card-popular-section__title">Dragon Dance</h1>
-                        <img src="img/card_dragon.webp" alt="" class="card-popular-section__img">
+                        <a class="link" href="#"><img src="img/card_dragon.webp" alt="dragon dance"
+                                class="card-popular-section__img"></a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section  section-two">
-            <h1 class="section__title"><span class="black-background">> Is It Realy Worth It?</span></h1>
+            <h1 class="section__title"><span class="black-background">> Is It Really Worth It?</span></h1>
             <div class="wrapper wrapper--row">
                 <div class="picture-frame picture-frame--big">
-                    <img class="picture-frame__img picture-frame__img--big" src="img/test3.jpg" alt="">
+                    <img class="picture-frame__img picture-frame__img--big" src="img/section2-big-photo.jpg"
+                        alt="ferris wheel">
                 </div>
                 <div class="text-container">
                     <div class="text-container__small-item">
                         <div class="text-container__title">
-                            <h1>Number One</h1>
+                            <h1>#Views</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        <p>One of the most recognizable skylines in the world can be found in Hong Kong, where towering
+                            skyscrapers rise against a
+                            backdrop of lush green mountains and Victoria Harbour. This dramatic scene highlights the
+                            city's modernity and
+                            underscores its status as a global financial hub.</p>
                     </div>
                     <div class="text-container__small-item">
                         <div class="text-container__title">
-                            <h1>Number Two</h1>
+                            <h1>#Nightlife</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        <p>The nightlife here is legendary, offering a wide array of after-dark fun. You can enjoy
+                            cocktails with <mark class="mark--alternative">stunning views at
+                                rooftop bars like Ozone</mark> or dive into the vibrant atmosphere of Lan Kwai Fong, a
+                            district
+                            known for its energetic party
+                            scene. There's no shortage of entertainment to explore.</p>
 
                     </div>
                     <div class="text-container__small-item">
                         <div class="text-container__title">
-                            <h1>Number Three</h1>
+                            <h1>#Culture</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        <p>The city's <mark class="mark--alternative">blend of Chinese traditions and Western
+                                influences</mark> is evident in its
+                            cultural
+                            heritage. This unique mix can
+                            be seen in local festivals, architecture, and daily practices. Sites like the Chi Lin
+                            Nunnery and Po Lin Monastery
+                            beautifully showcase traditional Chinese architecture and spiritual values.</p>
                     </div>
                     <div class="text-container__small-item">
                         <div class="text-container__title">
-                            <h1>Number Four</h1>
+                            <h1>#Festivals</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                            obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                            Non, quam saepe veniam voluptatum alias tenetur?</p>
+                        <p>Hong Kong's rich cultural calendar is <mark class="mark--alternative">packed with exciting
+                                festivals and events</mark>,
+                            offering
+                            visitors a chance to
+                            experience the city's vibrant traditions and modern festivities. One of the most spectacular
+                            is Chinese New Year, which
+                            is celebrated with grand parades, <mark class="mark--alternative">colorful fireworks over
+                                Victoria Harbour</mark>, and
+                            lively
+                            dragon and lion dances.</p>
+                    </div>
+
+                    <div class="text-container__small-item">
+                        <div class="text-container__title">
+                            <h1>#Hiking</h1>
+                        </div>
+                        <p>Hiking in this region offers a surprising escape from the bustling urban environment, with a
+                            beautiful mix of mountains,
+                            coastlines, and lush greenery. <mark class="mark--alternative">Popular trails like Dragon's
+                                Back provide breathtaking views
+                                of the ocean and nearby</mark>
+                            islands, while Lantau Peak rewards hikers with a sunrise view near the iconic Big Buddha.
+                        </p>
+                    </div>
+                    <div class="text-container__small-item">
+                        <div class="text-container__title">
+                            <h1>#Food</h1>
+                        </div>
+                        <p>This place is a food lover's paradise, renowned for its diverse culinary scene that blends
+                            Cantonese classics with
+                            international flavors. Dim sum is a must-try, featuring iconic dishes like shrimp dumplings
+                            and barbecue pork buns. From
+                            Michelin-starred restaurants to local street food stalls, there is something for every
+                            palate.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -152,90 +188,109 @@
             <div class="wrapper wrapper--row">
                 <div class="wrapper wrapper--row">
                     <div class="picture-frame picture-frame--small">
-                        <img class="picture-frame__img picture-frame--small" src="img/nature.jpg" alt="">
+                        <img class="picture-frame__img picture-frame--small" src="img/nature.jpg" alt="nature">
                     </div>
                     <div class="wrapper wrapper--row">
                         <div class="text-container__small-item black-background">
                             <div class="text-container__title">
                                 <h1>Nature</h1>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                                Non, quam saepe veniam voluptatum alias tenetur?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                                Non, quam saepe veniam voluptatum alias tenetur?</p>
+                            <p>Hong Kong is known for its urban skyline, but it also offers stunning natural beauty.
+                                <mark class="mark">Around 40% of its land is
+                                    dedicated to parks and nature reserves</mark>, making it a paradise for outdoor
+                                enthusiasts.
+                                The city is home to lush
+                                mountains, scenic hiking trails like the Dragon’s Back and Lion Rock, and
+                                <mark class="mark">beautiful
+                                    beaches</mark> like Repulse Bay and Shek O.
+                                Visitors can explore serene islands such as Lantau, known for its giant Buddha and
+                                <mark class="mark">peaceful trails</mark>, or take boat trips
+                                to spot pink dolphins. Hong Kong’s diverse nature provides a perfect contrast to its
+                                bustling city life.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="wrapper wrapper--row">
                     <div class="picture-frame picture-frame--small">
-                        <img class="picture-frame__img picture-frame--small" src="img/city.jpg" alt="">
+                        <img class="picture-frame__img picture-frame--small" src="img/city.jpg" alt="city">
                     </div>
                     <div class="wrapper wrapper--row">
                         <div class="text-container__small-item black-background">
                             <div class="text-container__title">
                                 <h1>City</h1>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                                Non, quam saepe veniam voluptatum alias tenetur?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit non culpa
-                                obcaecati, ipsum magni doloribus quibusdam quo, tempore ratione, enim ad perferendis!
-                                Non, quam saepe veniam voluptatum alias tenetur?</p>
+                            <p>Hong Kong is a vibrant metropolis where East meets West, blending modern skyscrapers with
+                                rich cultural heritage.<mark class="mark"> The
+                                    city's iconic skyline, best viewed from Victoria Peak or aboard the Star Ferry
+                                </mark>,
+                                showcases a mix of architectural
+                                marvels. Bustling districts like Central and Causeway Bay are home to luxury
+                                shopping
+                                malls, fine dining, and lively
+                                nightlife, while traditional markets in Mong Kok and Sham Shui Po offer a glimpse of
+                                local life. Historic temples,
+                                colonial-era buildings, and futuristic urban landscapes coexist, creating a dynamic
+                                and
+                                diverse city.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="wrapper wrapper--row">
-                <img class="interactive-map__showcase-photo" src="img/card_dragon.webp" alt="showcase-photo">
+                <img class="interactive-map__showcase-photo" src="img/national-parks.jpg" alt="national-parks">
+                <h1 class="interactive-map-title">Top 5<br>National Parks</h1>
                 <div style="position: relative;" class="interactive-map">
-                    <img class="interactive-map__map" src="img/hong-kong-outline.png" alt="">
-                    <button class="interactive-map__button"></button>
-                    <button class="interactive-map__button"></button>
-                    <button class="interactive-map__button"></button>
-                    <button class="interactive-map__button"></button>
-                    <button class="interactive-map__button"></button>
+                    <img class="interactive-map__map" src="img/hong-kong-outline.png" alt="hong-kong-outline">
+                    <button class="interactive-map__button"><a class="link"
+                            href="#">Lantau&nbsp;Country&nbsp;Park</a></button>
+                    <button class="interactive-map__button"><a class="link"
+                            href="#">Shek&nbsp;O&nbsp;Country&nbsp;Park</a></button>
+                    <button class="interactive-map__button"><a class="link"
+                            href="#">Pok&nbsp;Fu&nbsp;Lam&nbsp;Country&nbsp;Park</a></button>
+                    <button class="interactive-map__button"><a class="link"
+                            href="#">Sai&nbsp;Kung&nbsp;East&nbsp;Country&nbsp;Park</a></button>
+                    <button class="interactive-map__button"><a class="link"
+                            href="#">Lion&nbsp;Rock&nbsp;Country&nbsp;Park</a></button>
                 </div>
             </div>
         </section>
         <section class="section newsletter">
             <div class="wrapper wrapper--column">
-                <span class="newsletter__small-title">newsletter</span>
+                <a class="newsletter__small-title link" href="#">newsletter</a>
                 <h1 class="newsletter__title">Don't Miss Our Daily Updates</h1>
                 <div class="wrapper wrapper--row">
-                    <input class="newsletter__text-form" type="text" placeholder="Email address" name="mail" required>
-                    <input class="newsletter__submit" type="submit" value="SUBSCRIBE" name="mail">
+                    <form action="#">
+                        <input class="newsletter__text-form" type="email" placeholder="Email address" name="mail"
+                            required>
+                        <input class="newsletter__submit" type="submit" value="SUBSCRIBE" name="mail">
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer wrapper wrapper--row">
-        <!-- <div class="wrapper-column">
-            <img src="img/logov2.png" alt="logo">
-            <h1 class="section-title" style="text-align: center;">Visit Hong Kong</h1>
-        </div> -->
         <div class="wrapper wrapper--column">
             <h2 class="footer__title">ABOUT THIS SITE</h2>
-            <p>Terms of use</p>
-            <p>Privacy policy</p>
-            <p>Cookie policy</p>
+            <a class="link" href="#">Terms of use</a>
+            <a class="link" href="#">Privacy policy</a>
+            <a class="link" href="#">Cookie policy</a>
         </div>
         <div class="wrapper wrapper--column">
             <h2 class="footer__title">RELATED SITES</h2>
-            <p>About Us</p>
-            <p>Newsroom</p>
-            <p>Join Us</p>
+            <a class="link" href="#">About Us</a>
+            <a class="link" href="#">Newsroom</a>
+            <a class="link" href="#">Join Us</a>
         </div>
         <div class="wrapper wrapper--column">
             <h2 class="footer__title">HELP</h2>
-            <p>Contact us</p>
-            <p>FAQ</p>
-            <p>Newsletter signup</p>
+            <a class="link" href="#">Contact us</a>
+            <a class="link" href="#">FAQ</a>
+            <a class="link" href="#">Newsletter signup</a>
         </div>
         <div class="wrapper-break"></div>
-        <!-- <p>Copyright © 2024 Jan Bil All rights reserved.</p> -->
-        <p class="footer__creator">--- DESIGNED BY JAN BIL ---</p>
+        <a class="footer__creator link" href="#">--- DESIGNED BY JAN BIL ---</a>
     </footer>
 </body>
 

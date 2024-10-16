@@ -160,43 +160,6 @@ main {
     background-color: black;
 }
 
-/* --- CARD --- */
-
-/* .card-bundle {
-    height: 400px;
-    width: 250px;
-    position: relative;
-    margin: 0 -50px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid crimson;
-    border-top: 10px solid crimson;
-    overflow: hidden;
-} */
-
-/* .card-bundle img {
-    height: 100%;
-} */
-
-/* .card-bundle:nth-child(1) {
-    z-index: 1;
-} */
-
-/* .card-bundle:nth-child(2) {
-    z-index: 3;
-    transform: scale(1.05);
-} */
-
-/* .card-bundle:nth-child(3) {
-    z-index: 2;
-} */
-
-/* .card-bundle-text-area {
-    flex-grow: 5;
-    color: crimson;
-    border: 2px solid crimson;
-} */
-
 /* --- WRAPPER --- */
 
 .wrapper {
@@ -253,8 +216,10 @@ main {
     border-bottom: 2px solid crimson;
 }
 
-.footer .wrapper--column p {
+.footer .wrapper--column a {
     margin: 10px 0px;
+    text-decoration: none;
+    color: crimson;
 }
 
 .footer__creator {
@@ -272,6 +237,9 @@ main {
 .picture-frame--big {
     width: auto;
     height: 900px;
+    border: none;
+    background-image: url(../img/fancy-border.svg);
+    background-size: cover;
 }
 
 .picture-frame--small {
@@ -284,6 +252,14 @@ main {
     margin: 15px;
 }
 
+/* .mask-img1 {
+    mask:
+        url(../img/background2.svg) center/cover no-repeat,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+} */
+
+
 .picture-frame__img--small {
     width: 350px;
     height: 350px;
@@ -291,17 +267,16 @@ main {
 
 .picture-frame__img--big {
     width: 500px;
-    height: 900px;
+    height: 870px;
+    object-position: left;
 }
-
-
 
 /* --- TEXT-CONTAINER --- */
 
 .text-container {
     display: grid;
     height: auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding: 20px;
     flex: 1;
@@ -309,6 +284,7 @@ main {
 
 .text-container__small-item {
     min-width: 300px;
+    min-height: 450px;
     padding: 20px;
     height: 100%;
     display: flex;
@@ -345,6 +321,29 @@ main {
     background-color: black;
 }
 
+/* --- LINK --- */
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* .link:hover {} */
+/* .link:active {} */
+/* .link:visited {} */
+
+/* --- MARK --- */
+
+.mark {
+    background-color: crimson;
+}
+
+.mark--alternative {
+    color: inherit;
+    background-color: transparent;
+    border-bottom: 3px dotted crimson;
+}
+
 /* --- DROPDOWN --- */
 
 .dropdown {
@@ -378,6 +377,7 @@ main {
 
 .newsletter__small-title {
     border-bottom: 1px solid white;
+    /* color: white; */
 }
 
 .newsletter__title {
@@ -401,30 +401,54 @@ main {
     font-weight: 900;
 }
 
+.newsletter__submit:hover {
+    cursor: pointer;
+}
+
 /* --- SECTION-TWO --*/
 
 .section-two .text-container .text-container__small-item:nth-child(1) {
-    background-image: url(../img/test1.jpg);
+    background-image: url(../img/small-item-bg1.jpg);
+    background-size: cover;
 }
 
 .section-two .text-container .text-container__small-item:nth-child(2) {
-    background-image: url(../img/test2.jpg);
+    background-image: url(../img/small-item-bg2.jpg);
+    background-size: cover;
 }
 
 .section-two .text-container .text-container__small-item:nth-child(3) {
-    background-image: url(../img/test3.jpg);
+    background-image: url(../img/small-item-bg3.jpg);
+    background-size: cover;
 }
 
 .section-two .text-container .text-container__small-item:nth-child(4) {
-    background-image: url(../img/test8.jpg);
+    background-image: url(../img/small-item-bg4.jpg);
+    background-size: cover;
 }
 
-/* INTERACTIVE-MAP */
+.section-two .text-container .text-container__small-item:nth-child(5) {
+    background-image: url(../img/small-item-bg5.jpg);
+    background-size: cover;
+}
+
+.section-two .text-container .text-container__small-item:nth-child(6) {
+    background-image: url(../img/small-item-bg6.jpg);
+    background-size: cover;
+}
+
+/* --- INTERACTIVE-MAP --- */
 .interactive-map {
     /* position: relative; */
     /* height: 700px; */
     /* width: 600px; */
     z-index: 2;
+}
+
+.interactive-map-title {
+    color: white;
+    font-size: 80px;
+    /* -webkit-text-stroke: 2px white; */
 }
 
 .interactive-map__button {
@@ -435,14 +459,38 @@ main {
     border-radius: 50%;
     border: none;
     background-color: crimson;
+    color: crimson;
+    font-size: 13px;
     padding: 15px;
     cursor: pointer;
     transition: 0.3s;
+    white-space: pre;
+}
+
+.interactive-map__button::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -20px;
+    left: -3px;
+    z-index: -1;
+    background-color: white;
+    height: 22px;
+    width: 170px;
 }
 
 .interactive-map__button:hover {
     filter: brightness(1.5);
     scale: 1.5;
+}
+
+.interactive-map__showcase-photo {
+    width: 850px;
+    opacity: 0.3;
+    position: absolute;
+    left: 13%;
+    z-index: 1;
+    padding: 10px;
 }
 
 /* Lantau North Country Park */
@@ -475,16 +523,82 @@ main {
     left: 53%;
 }
 
-.interactive-map__showcase-photo {
-    width: 800px;
-    opacity: 0.3;
-    position: absolute;
-    left: 10%;
-    z-index: 1;
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 1596px) {
+    .picture-frame__img--big {
+        display: none;
+    }
+
+    .card-popular-section {
+        width: 220px;
+    }
 }
 
 
+@media only screen and (max-width: 1135px) {
+    .interactive-map__map {
+        width: 80vw;
+    }
+
+    .text-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .picture-frame__img--big {
+        display: block;
+    }
+
+    .card-popular-section__img {
+        display: none;
+    }
+
+    .card-popular-section__img {
+        height: 0px;
+    }
+
+    .card-popular-section:hover {
+        filter: brightness(1.5);
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width: 700px) {
+
+    .interactive-map__map {
+        opacity: 0;
+    }
+
+    .interactive-map>button:nth-child(2) {
+        top: 0%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interactive-map>button:nth-child(3) {
+        top: 20%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interactive-map>button:nth-child(4) {
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interactive-map>button:nth-child(5) {
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interactive-map>button:nth-child(6) {
+        top: 80%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
     .text-container {
         display: flex;
         flex-direction: column;
@@ -514,9 +628,5 @@ main {
     .newsletter__text-form {
         width: auto;
         text-align: center;
-    }
-
-    .card-popular-section__img {
-        height: 500px;
     }
 }
