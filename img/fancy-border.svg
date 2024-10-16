@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="112.08928mm"
+   height="162.06505mm"
+   viewBox="0 0 112.08928 162.06505"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="fancy-border.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.52410024"
+     inkscape:cx="-152.64255"
+     inkscape:cy="170.76886"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.975761,-69.96627)">
+    <path
+       id="rect1031"
+       style="fill:#dc143c;fill-opacity:1;stroke:none;stroke-width:2.94047;paint-order:markers fill stroke"
+       d="M 0 0 L 0 62.371094 L 52.033203 0 L 0 0 z M 91.041016 0 L 75.056641 19.160156 L 137.19727 19.160156 L 137.18945 0 L 91.041016 0 z M 167.14258 0 L 167.15039 19.160156 L 225.19922 19.160156 L 225.19336 0 L 167.14258 0 z M 255.14648 0 L 255.15234 19.160156 L 341.79297 19.160156 L 321.70312 0 L 255.14648 0 z M 35.617188 66.435547 L 0 109.12891 L 0 165.29688 L 35.617188 165.30078 L 35.617188 66.435547 z M 0 221.70117 L 0 266.99609 L 35.617188 267 L 35.617188 221.70508 L 0 221.70117 z M 0 319.1875 L 0 365.48633 L 35.617188 365.49023 L 35.617188 319.19141 L 0 319.1875 z M 0 411.61523 L 0 498.38672 L 35.617188 532.35742 L 35.617188 411.61914 L 0 411.61523 z M 0 539.78125 L 0 612.5293 L 76.275391 612.5293 L 0 539.78125 z M 101.34961 595.05078 L 119.67578 612.5293 L 163.19336 612.5293 L 163.1875 595.05078 L 101.34961 595.05078 z M 193.14062 595.05078 L 193.14648 612.5293 L 246.8457 612.5293 L 246.83984 595.05078 L 193.14062 595.05078 z M 276.79297 595.05078 L 276.79883 612.5293 L 311.17188 612.5293 L 325.75391 595.05078 L 276.79297 595.05078 z "
+       transform="matrix(0.26458333,0,0,0.26458333,49.975761,69.96627)" />
+  </g>
+</svg>
