@@ -16,46 +16,45 @@
     <!-- <a href="https://www.flaticon.com/free-icons/hong-kong" title="hong kong icons">Hong kong icons created by cube29Flaticon</a> -->
     <!-- https://youtu.be/_jow6M0iYok?si=jX-JaXsFqwEme-Vm -->
     <!-- https://youtu.be/66OD-X_I38I?si=kEsK2Bnyh5rPg-ik -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Visit Hong Kong</title>
 </head>
 
 <body>
     <nav class="nav">
-        <img src="img/logov2.png" alt="logo" class="nav__logo">
+        <a class="link" href="#"><img src="img/logov2.png" alt="logo" class="nav__logo"></a>
         <ul class="nav__ul">
             <div class="dropdown">
-                <li class="button button--nav-mobile">MENU</li>
+                <li class="link-decorative link-decorative--nav-mobile">MENU</li>
                 <div class="dropdown-content">
-                    <li class="button button--list"><a class="link" href="#">EVENTS</a></li>
-                    <li class="button button--list"><a class="link" href="#">EXPLORE</a></li>
-                    <li class="button button--list"><a class="link" href="#">PLAN</a></li>
+                    <a class="link-decorative link-decorative--list" href="#">EVENTS</a>
+                    <a class="link-decorative link-decorative--list" href="#">EXPLORE</a>
+                    <a class="link-decorative link-decorative--list" href="#">PLAN</a>
                 </div>
             </div>
             <div class="dropdown">
-                <li class="button button--nav">EVENTS</li>
+                <li class="link-decorative link-decorative--nav">EVENTS</li>
                 <div class="dropdown-content">
-                    <li class="button button--list"><a class="link" href="#">UPCOMING</a></li>
-                    <li class="button button--list"><a class="link" href="#">CONCERTS</a></li>
-                    <li class="button button--list"><a class="link" href="#">FESTIVALS</a></li>
+                    <a class="link-decorative link-decorative--list" href="#">UPCOMING</a>
+                    <a class="link-decorative link-decorative--list" href="#">CONCERTS</a>
+                    <a class="link-decorative link-decorative--list" href="#">FESTIVALS</a>
                 </div>
             </div>
             <div class="dropdown">
-                <li class="button button--nav">EXPLORE</li>
+                <li class="link-decorative link-decorative--nav">EXPLORE</li>
                 <div class="dropdown-content">
-                    <li class="button button--list"><a class="link" href="#">ATTRACTIONS</a></li>
-                    <li class="button button--list"><a class="link" href="#">DINING</a></li>
-                    <li class="button button--list"><a class="link" href="#">NIGHTLIFE</a></li>
-                    <li class="button button--list"><a class="link" href="#">CULTURE</a></li>
-                    <li class="button button--list"><a class="link" href="#">TRAVEL</a></li>
+                    <a class="link-decorative link-decorative--list" href="#">ATTRACTIONS</a>
+                    <a class="link-decorative link-decorative--list" href="#">DINING</a>
+                    <a class="link-decorative link-decorative--list" href="#">NIGHTLIFE</a>
+                    <a class="link-decorative link-decorative--list" href="#">CULTURE</a>
+                    <a class="link-decorative link-decorative--list" href="#">TRAVEL</a>
                 </div>
             </div>
             <div class="dropdown">
-                <li class="button button--nav">PLAN</li>
+                <li class="link-decorative link-decorative--nav">PLAN</li>
                 <div class="dropdown-content">
-                    <li class="button button--list"><a class="link" href="#">ACCOMMODATION</a></li>
-                    <li class="button button--list"><a class="link" href="#">ESSENTIALS</a></li>
-                    <li class="button button--list"><a class="link" href="#">TRIP PLANNER</a></li>
+                    <a class="link-decorative link-decorative--list" href="#">ACCOMMODATION</a>
+                    <a class="link-decorative link-decorative--list" href="#">ESSENTIALS</a>
+                    <a class="link-decorative link-decorative--list" href="#">TRIP PLANNER</a>
                 </div>
             </div>
         </ul>
@@ -70,44 +69,56 @@
     </header>
     <main>
         <section class="section">
-            <h1 class="section__title"><span class="black-background">> What's Popular</span></h1>
-            <div class="wrapper wrapper--row">
+            <h1 class="section__title"><span class="black-background"><span>> What's Popular</span></span></h1>
+            <div class="wrapper wrapper--row card-popular-wrapper">
                 <div class="wrapper">
                     <div class="card-popular-section">
-                        <h1 class="card-popular-section__title">Hiking</h1>
-                        <a class="link" href="#"><img src="img/hiking.jpg" alt="hiking"
-                                class="card-popular-section__img"></a>
+                        <a class="link" href="#">
+                            <h1 class="card-popular-section__title">Hiking</h1>
+                            <img src="img/card-popular-hiking.png" alt="hiking" class="card-popular-section__img">
+                            <div class="card-popular-section-chinese-desc">徒步旅行</div>
+                        </a>
                     </div>
                     <div class="card-popular-section">
-                        <h1 class="card-popular-section__title">Lantern Carnivals</h1>
-                        <a class="link" href="#"><img src="img/card_lanters.jpg" alt="lantern carnivals"
-                                class="card-popular-section__img"></a>
+                        <a class="link" href="#">
+                            <h1 class="card-popular-section__title">Lantern Carnivals</h1>
+                            <img src="img/card-popular-lantern-carnivals.png" alt="lantern carnivals"
+                                class="card-popular-section__img">
+                            <div class="card-popular-section-chinese-desc">灯笼嘉年华</div>
+                        </a>
                     </div>
                 </div>
                 <div class="wrapper">
+
                     <div class="card-popular-section">
-                        <h1 class="card-popular-section__title">Chinese New Year</h1>
-                        <a class="link" href="#"><img src="img/card_firework.jpg" alt="chinese new year"
-                                class="card-popular-section__img"></a>
+                        <a class="link" href="#">
+                            <h1 class="card-popular-section__title">Chinese New Year</h1>
+                            <img src="img/card-popular-chinese-new-year.png" alt="chinese new year"
+                                class="card-popular-section__img">
+                            <div class="card-popular-section-chinese-desc">农历新年</div>
+                        </a>
                     </div>
                     <div class="card-popular-section">
-                        <h1 class="card-popular-section__title">Dragon Dance</h1>
-                        <a class="link" href="#"><img src="img/card_dragon.webp" alt="dragon dance"
-                                class="card-popular-section__img"></a>
+                        <a class="link" href="#">
+                            <h1 class="card-popular-section__title">Dragon Dance</h1>
+                            <img src="img/card-popular-dragon-dance.png" alt="dragon dance"
+                                class="card-popular-section__img">
+                            <div class="card-popular-section-chinese-desc">舞龙表演</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section  section-two">
-            <h1 class="section__title"><span class="black-background">> Is It Really Worth It?</span></h1>
+            <h1 class="section__title"><span class="black-background"><span>> Is It Really Worth It?</span></span></h1>
             <div class="wrapper wrapper--row">
                 <div class="picture-frame picture-frame--big">
                     <img class="picture-frame__img picture-frame__img--big" src="img/section2-big-photo.jpg"
                         alt="ferris wheel">
                 </div>
-                <div class="text-container">
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                <div class="card-container">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Views</h1>
                         </div>
                         <p>One of the most recognizable skylines in the world can be found in Hong Kong, where towering
@@ -116,8 +127,8 @@
                             city's modernity and
                             underscores its status as a global financial hub.</p>
                     </div>
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Nightlife</h1>
                         </div>
                         <p>The nightlife here is legendary, offering a wide array of after-dark fun. You can enjoy
@@ -128,8 +139,8 @@
                             scene. There's no shortage of entertainment to explore.</p>
 
                     </div>
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Culture</h1>
                         </div>
                         <p>The city's <mark class="mark--alternative">blend of Chinese traditions and Western
@@ -140,8 +151,8 @@
                             Nunnery and Po Lin Monastery
                             beautifully showcase traditional Chinese architecture and spiritual values.</p>
                     </div>
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Festivals</h1>
                         </div>
                         <p>Hong Kong's rich cultural calendar is <mark class="mark--alternative">packed with exciting
@@ -156,8 +167,8 @@
                             dragon and lion dances.</p>
                     </div>
 
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Hiking</h1>
                         </div>
                         <p>Hiking in this region offers a surprising escape from the bustling urban environment, with a
@@ -168,8 +179,8 @@
                             islands, while Lantau Peak rewards hikers with a sunrise view near the iconic Big Buddha.
                         </p>
                     </div>
-                    <div class="text-container__small-item">
-                        <div class="text-container__title">
+                    <div class="card-container__small-item">
+                        <div class="card-container__title">
                             <h1>#Food</h1>
                         </div>
                         <p>This place is a food lover's paradise, renowned for its diverse culinary scene that blends
@@ -184,15 +195,16 @@
             </div>
         </section>
         <section class="section">
-            <h1 class="section__title"><span class="black-background">> City And Nature</span></h1>
+            <h1 class="section__title"><span class="black-background"><span>> City And Nature</span></span></h1>
             <div class="wrapper wrapper--row">
                 <div class="wrapper wrapper--row">
                     <div class="picture-frame picture-frame--small">
-                        <img class="picture-frame__img picture-frame--small" src="img/nature.jpg" alt="nature">
+                        <img class="picture-frame__img picture-frame--small" src="img/city-and-nature_nature.jpg"
+                            alt="nature">
                     </div>
                     <div class="wrapper wrapper--row">
-                        <div class="text-container__small-item black-background">
-                            <div class="text-container__title">
+                        <div class="card-container__small-item black-background">
+                            <div class="card-container__title">
                                 <h1>Nature</h1>
                             </div>
                             <p>Hong Kong is known for its urban skyline, but it also offers stunning natural beauty.
@@ -213,11 +225,12 @@
                 </div>
                 <div class="wrapper wrapper--row">
                     <div class="picture-frame picture-frame--small">
-                        <img class="picture-frame__img picture-frame--small" src="img/city.jpg" alt="city">
+                        <img class="picture-frame__img picture-frame--small" src="img/city-and-nature_city.jpg"
+                            alt="city">
                     </div>
                     <div class="wrapper wrapper--row">
-                        <div class="text-container__small-item black-background">
-                            <div class="text-container__title">
+                        <div class="card-container__small-item black-background">
+                            <div class="card-container__title">
                                 <h1>City</h1>
                             </div>
                             <p>Hong Kong is a vibrant metropolis where East meets West, blending modern skyscrapers with
@@ -243,16 +256,11 @@
                 <h1 class="interactive-map-title">Top 5<br>National Parks</h1>
                 <div style="position: relative;" class="interactive-map">
                     <img class="interactive-map__map" src="img/hong-kong-outline.png" alt="hong-kong-outline">
-                    <button class="interactive-map__button"><a class="link"
-                            href="#">Lantau&nbsp;Country&nbsp;Park</a></button>
-                    <button class="interactive-map__button"><a class="link"
-                            href="#">Shek&nbsp;O&nbsp;Country&nbsp;Park</a></button>
-                    <button class="interactive-map__button"><a class="link"
-                            href="#">Pok&nbsp;Fu&nbsp;Lam&nbsp;Country&nbsp;Park</a></button>
-                    <button class="interactive-map__button"><a class="link"
-                            href="#">Sai&nbsp;Kung&nbsp;East&nbsp;Country&nbsp;Park</a></button>
-                    <button class="interactive-map__button"><a class="link"
-                            href="#">Lion&nbsp;Rock&nbsp;Country&nbsp;Park</a></button>
+                    <a class="link interactive-map__link" href="#">Lantau&nbsp;Country&nbsp;Park</a>
+                    <a class="link interactive-map__link" href="#">Shek&nbsp;O&nbsp;Country&nbsp;Park</a>
+                    <a class="link interactive-map__link" href="#">Pok&nbsp;Fu&nbsp;Lam&nbsp;Country&nbsp;Park</a>
+                    <a class="link interactive-map__link" href="#">Sai&nbsp;Kung&nbsp;East&nbsp;Country&nbsp;Park</a>
+                    <a class="link interactive-map__link" href="#">Lion&nbsp;Rock&nbsp;Country&nbsp;Park</a>
                 </div>
             </div>
         </section>
@@ -290,7 +298,8 @@
             <a class="link" href="#">Newsletter signup</a>
         </div>
         <div class="wrapper-break"></div>
-        <a class="footer__creator link" href="#">--- DESIGNED BY JAN BIL ---</a>
+        <a class="footer__creator link" href="https://youtu.be/dQw4w9WgXcQ?si=KhYJsI6STfYdQSyG">--- EPIC SECRET LINK
+            ---</a>
     </footer>
 </body>
 
